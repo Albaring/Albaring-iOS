@@ -35,6 +35,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BCF9654C2C2C80F900E85984 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BCFB1EC32C24615600143980 /* AppDelegate.swift */,
+				BCFB1EC52C24615600143980 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BCF9654D2C2C810200E85984 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BCF965502C2C812800E85984 /* Entities */,
+				BCF965512C2C813000E85984 /* UseCases */,
+				BCF965522C2C813800E85984 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BCF9654E2C2C810900E85984 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BCF965562C2C81C300E85984 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BCF9654F2C2C811200E85984 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BCF965542C2C816500E85984 /* Repositories */,
+				BCF965552C2C816C00E85984 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BCF965502C2C812800E85984 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BCF965512C2C813000E85984 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BCF965522C2C813800E85984 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				BCF965532C2C813F00E85984 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		BCF965532C2C813F00E85984 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BCF965542C2C816500E85984 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BCF965552C2C816C00E85984 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCF965562C2C81C300E85984 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BCF965582C2C81DA00E85984 /* View */,
+				BCF965572C2C81D200E85984 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BCF965572C2C81D200E85984 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BCF965582C2C81DA00E85984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCFB1EC72C24615600143980 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BCFB1EB72C24615600143980 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +157,10 @@
 		BCFB1EC22C24615600143980 /* Albaring */ = {
 			isa = PBXGroup;
 			children = (
-				BCFB1EC32C24615600143980 /* AppDelegate.swift */,
-				BCFB1EC52C24615600143980 /* SceneDelegate.swift */,
-				BCFB1EC72C24615600143980 /* ViewController.swift */,
+				BCF9654C2C2C80F900E85984 /* Application */,
+				BCF9654D2C2C810200E85984 /* Domain */,
+				BCF9654E2C2C810900E85984 /* Presentation */,
+				BCF9654F2C2C811200E85984 /* Data */,
 				BCFB1ECC2C24615800143980 /* Assets.xcassets */,
 				BCFB1ECE2C24615800143980 /* LaunchScreen.storyboard */,
 				BCFB1ED12C24615800143980 /* Info.plist */,
