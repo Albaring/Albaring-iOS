@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BCF965602C2C840C00E85984 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCF9655F2C2C840C00E85984 /* SnapKit */; };
-		BCF965622C2C840C00E85984 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = BCF965612C2C840C00E85984 /* SnapKit-Dynamic */; };
+		BCD4B75B2C3C16EE005F6F34 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4B75A2C3C16EE005F6F34 /* SplashView.swift */; };
+		BCD4B7652C3C17EE005F6F34 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BCD4B7642C3C17EE005F6F34 /* Lottie */; };
+		BCD4B7692C3C185D005F6F34 /* Color +.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4B7682C3C185D005F6F34 /* Color +.swift */; };
+		BCD4B76B2C3C189C005F6F34 /* LottieSplash.json in Resources */ = {isa = PBXBuildFile; fileRef = BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */; };
+		BCD4B76E2C3C1918005F6F34 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCD4B76D2C3C1918005F6F34 /* SnapKit */; };
 		BCFB1EC42C24615600143980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1EC32C24615600143980 /* AppDelegate.swift */; };
 		BCFB1EC62C24615600143980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1EC52C24615600143980 /* SceneDelegate.swift */; };
 		BCFB1EC82C24615600143980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1EC72C24615600143980 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BCD4B75A2C3C16EE005F6F34 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = ../../../../../Documents/SplashView.swift; sourceTree = "<group>"; };
+		BCD4B7682C3C185D005F6F34 /* Color +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color +.swift"; path = "../../../../../../Documents/Color +.swift"; sourceTree = "<group>"; };
+		BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieSplash.json; sourceTree = "<group>"; };
 		BCFB1EC02C24615600143980 /* Albaring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albaring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFB1EC32C24615600143980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFB1EC52C24615600143980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,14 +37,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF965602C2C840C00E85984 /* SnapKit in Frameworks */,
-				BCF965622C2C840C00E85984 /* SnapKit-Dynamic in Frameworks */,
+				BCD4B7652C3C17EE005F6F34 /* Lottie in Frameworks */,
+				BCD4B76E2C3C1918005F6F34 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BCD4B7592C3C16E7005F6F34 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4B75A2C3C16EE005F6F34 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		BCD4B75C2C3C1701005F6F34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCFB1ECC2C24615800143980 /* Assets.xcassets */,
+				BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */,
+				BCFB1ECE2C24615800143980 /* LaunchScreen.storyboard */,
+				BCFB1ED12C24615800143980 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCD4B7662C3C184B005F6F34 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4B7672C3C1853005F6F34 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BCD4B7672C3C1853005F6F34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4B7682C3C185D005F6F34 /* Color +.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BCF9654C2C2C80F900E85984 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +102,9 @@
 		BCF9654E2C2C810900E85984 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4B7592C3C16E7005F6F34 /* Splash */,
 				BCF965562C2C81C300E85984 /* Home */,
+				BCD4B7662C3C184B005F6F34 /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -165,9 +208,7 @@
 				BCF9654D2C2C810200E85984 /* Domain */,
 				BCF9654E2C2C810900E85984 /* Presentation */,
 				BCF9654F2C2C811200E85984 /* Data */,
-				BCFB1ECC2C24615800143980 /* Assets.xcassets */,
-				BCFB1ECE2C24615800143980 /* LaunchScreen.storyboard */,
-				BCFB1ED12C24615800143980 /* Info.plist */,
+				BCD4B75C2C3C1701005F6F34 /* Resources */,
 			);
 			path = Albaring;
 			sourceTree = "<group>";
@@ -189,8 +230,8 @@
 			);
 			name = Albaring;
 			packageProductDependencies = (
-				BCF9655F2C2C840C00E85984 /* SnapKit */,
-				BCF965612C2C840C00E85984 /* SnapKit-Dynamic */,
+				BCD4B7642C3C17EE005F6F34 /* Lottie */,
+				BCD4B76D2C3C1918005F6F34 /* SnapKit */,
 			);
 			productName = Albaring;
 			productReference = BCFB1EC02C24615600143980 /* Albaring.app */;
@@ -221,7 +262,8 @@
 			);
 			mainGroup = BCFB1EB72C24615600143980;
 			packageReferences = (
-				BCF9655E2C2C840C00E85984 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				BCD4B7632C3C17EE005F6F34 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				BCD4B76C2C3C1918005F6F34 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = BCFB1EC12C24615600143980 /* Products */;
 			projectDirPath = "";
@@ -239,6 +281,7 @@
 			files = (
 				BCFB1ECD2C24615800143980 /* Assets.xcassets in Resources */,
 				BCFB1ED02C24615800143980 /* Base in Resources */,
+				BCD4B76B2C3C189C005F6F34 /* LottieSplash.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD4B7692C3C185D005F6F34 /* Color +.swift in Sources */,
 				BCFB1EC82C24615600143980 /* ViewController.swift in Sources */,
+				BCD4B75B2C3C16EE005F6F34 /* SplashView.swift in Sources */,
 				BCFB1EC42C24615600143980 /* AppDelegate.swift in Sources */,
 				BCFB1EC62C24615600143980 /* SceneDelegate.swift in Sources */,
 			);
@@ -397,7 +442,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3URYLCPH2H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Albaring/Info.plist;
+				INFOPLIST_FILE = Albaring/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -429,7 +474,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3URYLCPH2H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Albaring/Info.plist;
+				INFOPLIST_FILE = Albaring/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -476,7 +521,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BCF9655E2C2C840C00E85984 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		BCD4B7632C3C17EE005F6F34 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+		BCD4B76C2C3C1918005F6F34 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -487,15 +540,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BCF9655F2C2C840C00E85984 /* SnapKit */ = {
+		BCD4B7642C3C17EE005F6F34 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BCF9655E2C2C840C00E85984 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
+			package = BCD4B7632C3C17EE005F6F34 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
-		BCF965612C2C840C00E85984 /* SnapKit-Dynamic */ = {
+		BCD4B76D2C3C1918005F6F34 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BCF9655E2C2C840C00E85984 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
+			package = BCD4B76C2C3C1918005F6F34 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
