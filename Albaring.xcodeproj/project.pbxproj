@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BCD4B75B2C3C16EE005F6F34 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4B75A2C3C16EE005F6F34 /* SplashView.swift */; };
 		BCD4B7652C3C17EE005F6F34 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BCD4B7642C3C17EE005F6F34 /* Lottie */; };
-		BCD4B7692C3C185D005F6F34 /* Color +.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4B7682C3C185D005F6F34 /* Color +.swift */; };
 		BCD4B76B2C3C189C005F6F34 /* LottieSplash.json in Resources */ = {isa = PBXBuildFile; fileRef = BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */; };
 		BCD4B76E2C3C1918005F6F34 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCD4B76D2C3C1918005F6F34 /* SnapKit */; };
+		BCD4B7702C3C47F7005F6F34 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4B76F2C3C47F7005F6F34 /* SplashView.swift */; };
+		BCD4B7722C3C4818005F6F34 /* Color +.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4B7712C3C4818005F6F34 /* Color +.swift */; };
 		BCFB1EC42C24615600143980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1EC32C24615600143980 /* AppDelegate.swift */; };
 		BCFB1EC62C24615600143980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1EC52C24615600143980 /* SceneDelegate.swift */; };
 		BCFB1EC82C24615600143980 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1EC72C24615600143980 /* HomeView.swift */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BCD4B75A2C3C16EE005F6F34 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = ../../../../../Documents/SplashView.swift; sourceTree = "<group>"; };
-		BCD4B7682C3C185D005F6F34 /* Color +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color +.swift"; path = "../../../../../../Documents/Color +.swift"; sourceTree = "<group>"; };
 		BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieSplash.json; sourceTree = "<group>"; };
+		BCD4B76F2C3C47F7005F6F34 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BCD4B7712C3C4818005F6F34 /* Color +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color +.swift"; sourceTree = "<group>"; };
 		BCFB1EC02C24615600143980 /* Albaring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albaring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFB1EC32C24615600143980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFB1EC52C24615600143980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		BCD4B7592C3C16E7005F6F34 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				BCD4B75A2C3C16EE005F6F34 /* SplashView.swift */,
+				BCD4B76F2C3C47F7005F6F34 /* SplashView.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -75,7 +75,7 @@
 		BCD4B7672C3C1853005F6F34 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BCD4B7682C3C185D005F6F34 /* Color +.swift */,
+				BCD4B7712C3C4818005F6F34 /* Color +.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -292,9 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCD4B7692C3C185D005F6F34 /* Color +.swift in Sources */,
+				BCD4B7702C3C47F7005F6F34 /* SplashView.swift in Sources */,
 				BCFB1EC82C24615600143980 /* HomeView.swift in Sources */,
-				BCD4B75B2C3C16EE005F6F34 /* SplashView.swift in Sources */,
+				BCD4B7722C3C4818005F6F34 /* Color +.swift in Sources */,
 				BCFB1EC42C24615600143980 /* AppDelegate.swift in Sources */,
 				BCFB1EC62C24615600143980 /* SceneDelegate.swift in Sources */,
 			);
