@@ -25,7 +25,9 @@ class SignViewController: UIViewController {
         addSubViews()
         setupConstraints()
     }
-    
+}
+
+extension SignViewController {
     private func setupConstraints() {
         test_Title.snp.makeConstraints { make in
             make.center.equalToSuperview()
