@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		36281E892C3E8283008A245B /* Preview+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36281E882C3E8283008A245B /* Preview+.swift */; };
 		36E6C8102C3E7E4E001BA918 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E6C80F2C3E7E4E001BA918 /* SignViewController.swift */; };
+		36E77CDB2C44F9C0004762A7 /* 테스트2.json in Resources */ = {isa = PBXBuildFile; fileRef = 36E77CDA2C44F9C0004762A7 /* 테스트2.json */; };
+		36E77CDD2C44F9E5004762A7 /* 테스트1.json in Resources */ = {isa = PBXBuildFile; fileRef = 36E77CDC2C44F9E5004762A7 /* 테스트1.json */; };
 		BCD4B7652C3C17EE005F6F34 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BCD4B7642C3C17EE005F6F34 /* Lottie */; };
 		BCD4B76B2C3C189C005F6F34 /* LottieSplash.json in Resources */ = {isa = PBXBuildFile; fileRef = BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */; };
 		BCD4B76E2C3C1918005F6F34 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BCD4B76D2C3C1918005F6F34 /* SnapKit */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		36281E882C3E8283008A245B /* Preview+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview+.swift"; sourceTree = "<group>"; };
 		36E6C80F2C3E7E4E001BA918 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		36E77CDA2C44F9C0004762A7 /* 테스트2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "테스트2.json"; sourceTree = "<group>"; };
+		36E77CDC2C44F9E5004762A7 /* 테스트1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "테스트1.json"; sourceTree = "<group>"; };
 		BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieSplash.json; sourceTree = "<group>"; };
 		BCD4B76F2C3C47F7005F6F34 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		BCD4B7712C3C4818005F6F34 /* Color +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color +.swift"; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				BCFB1ECC2C24615800143980 /* Assets.xcassets */,
+				36E77CDC2C44F9E5004762A7 /* 테스트1.json */,
+				36E77CDA2C44F9C0004762A7 /* 테스트2.json */,
 				BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */,
 				BCFB1ECE2C24615800143980 /* LaunchScreen.storyboard */,
 				BCFB1ED12C24615800143980 /* Info.plist */,
@@ -309,7 +315,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E77CDD2C44F9E5004762A7 /* 테스트1.json in Resources */,
 				BCFB1ECD2C24615800143980 /* Assets.xcassets in Resources */,
+				36E77CDB2C44F9C0004762A7 /* 테스트2.json in Resources */,
 				BCFB1ED02C24615800143980 /* Base in Resources */,
 				BCD4B76B2C3C189C005F6F34 /* LottieSplash.json in Resources */,
 			);
