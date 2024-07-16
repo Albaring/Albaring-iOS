@@ -6,7 +6,7 @@ import Lottie
 class SignViewController: UIViewController {
 
     private let animationView: LottieAnimationView = {
-        let lottieAnimationView = LottieAnimationView(name: "#_간편로그인_01")
+        let lottieAnimationView = LottieAnimationView(name: "SignViewLottie")
         return lottieAnimationView
     }()
     
