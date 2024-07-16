@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361D27872C46965C0037E170 /* 테스트11.json in Resources */ = {isa = PBXBuildFile; fileRef = 361D27862C46965C0037E170 /* 테스트11.json */; };
+		361D27892C4696D90037E170 /* 테스트222.json in Resources */ = {isa = PBXBuildFile; fileRef = 361D27882C4696D90037E170 /* 테스트222.json */; };
+		361D278B2C4699F10037E170 /* #_간편로그인_01.json in Resources */ = {isa = PBXBuildFile; fileRef = 361D278A2C4699F10037E170 /* #_간편로그인_01.json */; };
 		36281E892C3E8283008A245B /* Preview+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36281E882C3E8283008A245B /* Preview+.swift */; };
 		36E6C8102C3E7E4E001BA918 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E6C80F2C3E7E4E001BA918 /* SignViewController.swift */; };
 		36E77CDB2C44F9C0004762A7 /* 테스트2.json in Resources */ = {isa = PBXBuildFile; fileRef = 36E77CDA2C44F9C0004762A7 /* 테스트2.json */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		361D27862C46965C0037E170 /* 테스트11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "테스트11.json"; sourceTree = "<group>"; };
+		361D27882C4696D90037E170 /* 테스트222.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "테스트222.json"; sourceTree = "<group>"; };
+		361D278A2C4699F10037E170 /* #_간편로그인_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "#_간편로그인_01.json"; sourceTree = "<group>"; };
 		36281E882C3E8283008A245B /* Preview+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview+.swift"; sourceTree = "<group>"; };
 		36E6C80F2C3E7E4E001BA918 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		36E77CDA2C44F9C0004762A7 /* 테스트2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "테스트2.json"; sourceTree = "<group>"; };
@@ -89,6 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				BCFB1ECC2C24615800143980 /* Assets.xcassets */,
+				361D27862C46965C0037E170 /* 테스트11.json */,
+				361D278A2C4699F10037E170 /* #_간편로그인_01.json */,
+				361D27882C4696D90037E170 /* 테스트222.json */,
 				36E77CDC2C44F9E5004762A7 /* 테스트1.json */,
 				36E77CDA2C44F9C0004762A7 /* 테스트2.json */,
 				BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */,
@@ -315,10 +324,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361D27872C46965C0037E170 /* 테스트11.json in Resources */,
 				36E77CDD2C44F9E5004762A7 /* 테스트1.json in Resources */,
 				BCFB1ECD2C24615800143980 /* Assets.xcassets in Resources */,
 				36E77CDB2C44F9C0004762A7 /* 테스트2.json in Resources */,
+				361D278B2C4699F10037E170 /* #_간편로그인_01.json in Resources */,
 				BCFB1ED02C24615800143980 /* Base in Resources */,
+				361D27892C4696D90037E170 /* 테스트222.json in Resources */,
 				BCD4B76B2C3C189C005F6F34 /* LottieSplash.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
