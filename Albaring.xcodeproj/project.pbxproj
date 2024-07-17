@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361D278B2C4699F10037E170 /* SignViewLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 361D278A2C4699F10037E170 /* SignViewLottie.json */; };
 		36281E892C3E8283008A245B /* Preview+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36281E882C3E8283008A245B /* Preview+.swift */; };
 		36E6C8102C3E7E4E001BA918 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E6C80F2C3E7E4E001BA918 /* SignViewController.swift */; };
 		BCD4B7652C3C17EE005F6F34 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BCD4B7642C3C17EE005F6F34 /* Lottie */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		361D278A2C4699F10037E170 /* SignViewLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SignViewLottie.json; sourceTree = "<group>"; };
 		36281E882C3E8283008A245B /* Preview+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview+.swift"; sourceTree = "<group>"; };
 		36E6C80F2C3E7E4E001BA918 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieSplash.json; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				BCFB1ECC2C24615800143980 /* Assets.xcassets */,
+				361D278A2C4699F10037E170 /* SignViewLottie.json */,
 				BCD4B76A2C3C189C005F6F34 /* LottieSplash.json */,
 				BCFB1ECE2C24615800143980 /* LaunchScreen.storyboard */,
 				BCFB1ED12C24615800143980 /* Info.plist */,
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCFB1ECD2C24615800143980 /* Assets.xcassets in Resources */,
+				361D278B2C4699F10037E170 /* SignViewLottie.json in Resources */,
 				BCFB1ED02C24615800143980 /* Base in Resources */,
 				BCD4B76B2C3C189C005F6F34 /* LottieSplash.json in Resources */,
 			);

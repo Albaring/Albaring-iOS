@@ -1,16 +1,15 @@
-//
-//  SignViewController.swift
-//  Albaring
-//
-//  Created by LJh on 7/10/24.
-//
-
 import UIKit
 import SnapKit
 import SwiftUI
+import Lottie
 
 class SignViewController: UIViewController {
 
+    private let animationView: LottieAnimationView = {
+        let lottieAnimationView = LottieAnimationView(name: "SignViewLottie")
+        return lottieAnimationView
+    }()
+    
     private let test_Title: UILabel = {
         let label = UILabel()
         label.text = "SNS계정으로 간편 로그인하기"
@@ -41,7 +40,7 @@ class SignViewController: UIViewController {
         if let naverImage = UIImage(named: "naver_login") {
             button.setImage(naverImage, for: .normal)
         }
-        return button
+        return setupButtons(button: button)
     }()
     
     // triangleLabel 정의
@@ -62,22 +61,34 @@ class SignViewController: UIViewController {
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 13)
         label.layer.cornerRadius = 2
-        label.layer.masksToBounds = true // 코너 반경 설정을 위해 추가
+        label.layer.masksToBounds = true
         return label
     }()
     
     private lazy var loginStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.axis = .horizontal
+        stackView.axis = .vertical
         stackView.alignment = .fill
-        stackView.distribution = .fillEqually
-        stackView.spacing = 10
+        stackView.distribution = .fill
+        stackView.spacing = 20
+        stackView.addArrangedSubview(test_Title)
+        
+        let buttonStackView = UIStackView()
+        buttonStackView.axis = .horizontal
+        buttonStackView.alignment = .fill
+        buttonStackView.distribution = .fillEqually
+        buttonStackView.spacing = 20
+        buttonStackView.addArrangedSubview(kakaoLoginButton)
+        buttonStackView.addArrangedSubview(naverLoginButton)
+        buttonStackView.addArrangedSubview(googleLoginButton)
+        stackView.addArrangedSubview(buttonStackView)
+        
         return stackView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.backgroundColor = UIColor(hexCode: "10121C")
         addSubViews()
         setupConstraints()
     }
@@ -85,25 +96,30 @@ class SignViewController: UIViewController {
 
 extension SignViewController {
     private func addSubViews() {
-        for stackViewItem in [kakaoLoginButton, naverLoginButton, googleLoginButton] {
-            loginStackView.addArrangedSubview(stackViewItem)
-        }
-        
-        for viewItem in [test_Title,triangleLabel, descriptionLabel, loginStackView] {
+        for viewItem in [animationView, triangleLabel, descriptionLabel, loginStackView] {
             view.addSubview(viewItem)
         }
     }
     
-    private func setupConstraints() {
-        test_Title.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
-            make.leading.trailing.equalToSuperview().inset(20)
+    private func setupButtons(button: UIButton) -> UIButton {
+        button.snp.makeConstraints { make in
+            make.width.height.equalTo(60)
         }
+        return button
+    }
+    
+    private func setupConstraints() {
+        let safeArea = view.safeAreaLayoutGuide
+        
+        animationView.frame = view.bounds
+        animationView.center = view.center
+        animationView.play { _ in }
         
         loginStackView.snp.makeConstraints { make in
-            make.top.equalTo(test_Title.snp.bottom).offset(20)
-            make.leading.trailing.equalToSuperview().inset(20)
-            make.height.equalTo(60)
+            make.bottom.equalTo(safeArea).offset(-158)
+            make.centerX.equalToSuperview()
+            make.width.equalTo(220)
+            make.height.equalTo(105)
         }
         
         triangleLabel.snp.makeConstraints { make in
@@ -113,7 +129,7 @@ extension SignViewController {
         
         descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(loginStackView.snp.bottom).offset(20)
-            make.leading.equalTo(20)
+            make.leading.equalTo(loginStackView.snp.leading).offset(-15)
         }
     }
 }
@@ -126,7 +142,7 @@ struct SignViewController_Preview: PreviewProvider {
     }
 }
 
-class InnerPaddedLabel : UILabel {
+class InnerPaddedLabel: UILabel {
     
     private let padding = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4)
     

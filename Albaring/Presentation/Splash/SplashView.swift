@@ -34,6 +34,6 @@ class SplashView: UIViewController {
     }
     
     func pushHomeView() {
-        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(HomeView(), animated: false)
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(SignViewController(), animated: false)
     }
 }
