@@ -28,12 +28,12 @@ class SplashView: UIViewController {
                 self.animationView.alpha = 0
             }, completion: { _ in
                 self.animationView.removeFromSuperview()
-                self.pushHomeView()
+                self.removeSplashView()
             })
         }
     }
     
-    func pushHomeView() {
-        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(HomeView(), animated: false)
+    func removeSplashView() {
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(TabBarController(), animated: false)
     }
 }
