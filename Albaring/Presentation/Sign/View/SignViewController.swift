@@ -16,6 +16,7 @@ class SignViewController: UIViewController {
         label.numberOfLines = 0
         label.textColor = .white
         label.textAlignment = .center
+        label.alpha = 0
         return label
     }()
     
@@ -24,6 +25,8 @@ class SignViewController: UIViewController {
         if let kakaoImage = UIImage(named: "kakao_login") {
             button.setImage(kakaoImage, for: .normal)
         }
+        button.alpha = 0
+        button.isEnabled = false
         return button
     }()
     
@@ -32,6 +35,8 @@ class SignViewController: UIViewController {
         if let googleImage = UIImage(named: "google_login") {
             button.setImage(googleImage, for: .normal)
         }
+        button.alpha = 0
+        button.isEnabled = false
         return button
     }()
     
@@ -40,6 +45,8 @@ class SignViewController: UIViewController {
         if let naverImage = UIImage(named: "naver_login") {
             button.setImage(naverImage, for: .normal)
         }
+        button.alpha = 0
+        button.isEnabled = false
         return setupButtons(button: button)
     }()
     
@@ -49,6 +56,7 @@ class SignViewController: UIViewController {
         label.backgroundColor = UIColor(hexCode: "FF5C00", alpha: 1.0)
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 13)
+        label.alpha = 0
         return label
     }()
     
@@ -62,6 +70,7 @@ class SignViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 13)
         label.layer.cornerRadius = 2
         label.layer.masksToBounds = true
+        label.alpha = 0
         return label
     }()
     
@@ -114,6 +123,13 @@ extension SignViewController {
         animationView.frame = view.bounds
         animationView.center = view.center
         animationView.play { _ in }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            UIView.animate(withDuration: 0.2) { [self] in
+                [kakaoLoginButton, naverLoginButton, googleLoginButton].forEach { $0.isEnabled = true }
+                [test_Title, kakaoLoginButton, naverLoginButton, googleLoginButton, triangleLabel, descriptionLabel].forEach { $0.alpha = 1 }
+            }
+        }
         
         loginStackView.snp.makeConstraints { make in
             make.bottom.equalTo(safeArea).offset(-158)
