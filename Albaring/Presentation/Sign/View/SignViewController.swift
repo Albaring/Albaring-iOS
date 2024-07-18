@@ -122,6 +122,7 @@ extension SignViewController {
         
         animationView.frame = view.bounds
         animationView.center = view.center
+        animationView.animationSpeed = 2.0
         animationView.play { _ in }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
