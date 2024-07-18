@@ -32,8 +32,8 @@ class SplashView: UIViewController {
             })
         }
     }
-    
-    func removeSplashView() {
-        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(TabBarController(), animated: false)
+   
+    func pushHomeView() {
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(SignViewController(), animated: false)
     }
 }
