@@ -28,12 +28,12 @@ class SplashView: UIViewController {
                 self.animationView.alpha = 0
             }, completion: { _ in
                 self.animationView.removeFromSuperview()
-                self.removeSplashView()
+                self.pushSignView()
             })
         }
     }
    
-    func pushHomeView() {
+    func pushSignView() {
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(SignViewController(), animated: false)
     }
 }
